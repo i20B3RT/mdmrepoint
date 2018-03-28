@@ -1,0 +1,68 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="eWM test cases" configfailurepolicy="continue" parallel="tests" thread-count="3"><!---->
+    <listeners>
+        <listener class-name="com.uscold.mdmrepointaqa.conf.ScreenShootsListener" />
+        <listener class-name="com.uscold.mdmrepointaqa.conf.CustomHTMLReportListener" />
+    </listeners>
+    <!--<test preserve-order="true" name="create and confirm receipt">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.mdmrepointaqa.test.receipt.CreateReceiptTest"/>-->
+            <!--<class name="com.uscold.mdmrepointaqa.test.receipt.CreateNewAppointment"/>-->
+            <!--<class name="com.uscold.mdmrepointaqa.test.receipt.ReceivingTestRF"/>-->
+            <!--<class name="com.uscold.mdmrepointaqa.test.receipt.ConfirmLotTest"/>-->
+            <!--<class name="com.uscold.mdmrepointaqa.test.ViewAllReceipts"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="create barcode">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.mdmrepointaqa.test.barcode.AssingAndViewBarcodeTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <test name="create customer">
+        <classes>
+            <!--<class name="com.uscold.mdmrepointaqa.test.customers.ViewExistingCustomersPageTest"/>-->
+            <class name="com.uscold.mdmrepointaqa.test.customer.CreateNewAccountType"/>
+            <!--<class name="com.uscold.mdmrepointaqa.test.customer.CreateNewAccountType"/>-->
+        </classes>
+    </test>
+    <!--<test name="create product">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.mdmrepointaqa.test.product.CreateAndViewCreatedProductTest"/>-->
+            <!--<class name="com.uscold.mdmrepointaqa.test.product.UpdateAndViewCreatedProductTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="create location flow">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.mdmrepointaqa.test.location.CreateRoomAisleAndRack"/>-->
+            <!--<class name="com.uscold.mdmrepointaqa.test.location.LocationCRUDTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="order maintenance">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.mdmrepointaqa.test.orders.CreateNewOrder"/>-->
+            <!--<class name="com.uscold.mdmrepointaqa.test.orders.ShipOrderInquiryTest"/>-->
+            <!--<class name="com.uscold.mdmrepointaqa.test.orders.ViewExistingOrderPage"/>-->
+            <!--<class name="com.uscold.mdmrepointaqa.test.orders.OrdersSearchTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="CreateUser">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.mdmrepointaqa.test.user.CreateUserTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <test name="Inventory search by some criteria">
+        <classes>
+            <class name="com.uscold.mdmrepointaqa.test.inventory.InventorySearchTest"/>
+        </classes>
+    </test>
+    <test name="Driver Maintenance">
+        <classes>
+            <class name="com.uscold.mdmrepointaqa.test.driver.DriverMaintenanceSearchTests"/>
+        </classes>
+    </test>
+    <!--<test name="load zone map">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.mdmrepointaqa.test.CheckZoneMapForFortNorthTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+</suite>
